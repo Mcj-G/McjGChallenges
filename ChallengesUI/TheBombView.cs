@@ -24,5 +24,19 @@ namespace ChallengesUI
             frm.ShowDialog();
             this.Close();
         }
+
+        private void CheckButton_Click(object sender, EventArgs e)
+        {
+            string txt = inputTextBox.Text.ToLower();
+
+            if (txt.Contains("bomb"))
+            {
+                outputTextBox.Text = "Duck!!!";
+            }
+            else
+            {
+                outputTextBox.Text = "There is no bomb, relax.";
+            }
+        }
     }
 }
