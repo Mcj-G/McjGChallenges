@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{627856F8-8AE2-4F49-A6FF-DC5434C16B1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ChallengesUI</RootNamespace>
+    <AssemblyName>ChallengesUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUpView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUpView.Designer.cs">
+      <DependentUpon>AddUpView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlmostPalindromeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlmostPalindromeView.Designer.cs">
+      <DependentUpon>AlmostPalindromeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnagramView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnagramView.Designer.cs">
+      <DependentUpon>AnagramView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BinaryClockView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BinaryClockView.Designer.cs">
+      <DependentUpon>BinaryClockView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericBinaryTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericBinaryTreeView.Designer.cs">
+      <DependentUpon>GenericBinaryTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainView.Designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverlappingRectanglesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverlappingRectanglesView.Designer.cs">
+      <DependentUpon>OverlappingRectanglesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeopleInALineView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeopleInALineView.Designer.cs">
+      <DependentUpon>PeopleInALineView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PokerHandView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PokerHandView.Designer.cs">
+      <DependentUpon>PokerHandView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReverseAndNotView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReverseAndNotView.Designer.cs">
+      <DependentUpon>ReverseAndNotView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StringIncrementerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StringIncrementerView.Designer.cs">
+      <DependentUpon>StringIncrementerView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheBombView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheBombView.Designer.cs">
+      <DependentUpon>TheBombView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendingMachineView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendingMachineView.Designer.cs">
+      <DependentUpon>VendingMachineView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddUpView.resx">
+      <DependentUpon>AddUpView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlmostPalindromeView.resx">
+      <DependentUpon>AlmostPalindromeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnagramView.resx">
+      <DependentUpon>AnagramView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BinaryClockView.resx">
+      <DependentUpon>BinaryClockView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericBinaryTreeView.resx">
+      <DependentUpon>GenericBinaryTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainView.resx">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverlappingRectanglesView.resx">
+      <DependentUpon>OverlappingRectanglesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeopleInALineView.resx">
+      <DependentUpon>PeopleInALineView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokerHandView.resx">
+      <DependentUpon>PokerHandView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReverseAndNotView.resx">
+      <DependentUpon>ReverseAndNotView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StringIncrementerView.resx">
+      <DependentUpon>StringIncrementerView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheBombView.resx">
+      <DependentUpon>TheBombView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendingMachineView.resx">
+      <DependentUpon>VendingMachineView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
