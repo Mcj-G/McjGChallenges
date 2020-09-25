@@ -24,5 +24,26 @@ namespace ChallengesUI
             frm.ShowDialog();
             this.Close();
         }
+
+        private void inputTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (inputTextBox.Text != null && inputTextBox.Text != "")
+            {
+                if (Int64.TryParse(inputTextBox.Text, out Int64 i) && i > 0)
+                {
+                    outputTextBox.Text = $"{ String.Concat(i.ToString().Reverse()) }{ i }";
+                }
+                else
+                {
+                    MessageBox.Show("Please, enter correct value: a non-negative integer");
+                    inputTextBox.Text = "";
+                    outputTextBox.Text = "";
+                } 
+            }
+            else
+            {
+                outputTextBox.Text = "";
+            }
+        }
     }
 }

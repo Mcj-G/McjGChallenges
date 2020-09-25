@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DescriptionLabel.Text" xml:space="preserve">
+  <data name="DescriptionTextBox.Text" xml:space="preserve">
     <value>Create a function that finds the word "bomb" in the given string. If found, return "Duck!!!", 
 otherwise, return "There is no bomb, relax.". Examples: 
 "There is a bomb." ➞ "Duck!!!"
