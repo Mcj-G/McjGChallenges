@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -100,6 +101,12 @@
     <Compile Include="PokerHandView.Designer.cs">
       <DependentUpon>PokerHandView.cs</DependentUpon>
     </Compile>
+    <Compile Include="PopUp\OverlappingRectanglesChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\OverlappingRectanglesChart.Designer.cs">
+      <DependentUpon>OverlappingRectanglesChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseAndNotView.cs">
@@ -152,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PokerHandView.resx">
       <DependentUpon>PokerHandView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\OverlappingRectanglesChart.resx">
+      <DependentUpon>OverlappingRectanglesChart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
