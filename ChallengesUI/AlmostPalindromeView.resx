@@ -117,4 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DescriptionTexBox.Text" xml:space="preserve">
+    <value>A string is an almost-palindrome if, by changing only one character, you can make it a palindrome. Create a function that returns true if a string is an almost-palindrome and false otherwise. Examples:
+"abcdcbg" ➞ true // Transformed to "abcdcba" by changing "g" to "a".
+
+"abccia" ➞ true // Transformed to "abccba" by changing "i" to "b".
+
+"abcdaaa" ➞ false // Can't be transformed to a palindrome in exactly 1 turn.
+
+"1234321" ➞ false // Already a palindrome.
+
+NOTE:
+Return false if the string is already a palindrome.</value>
+  </data>
 </root>

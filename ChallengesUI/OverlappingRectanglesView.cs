@@ -104,8 +104,13 @@ namespace ChallengesUI
 
         private void VisualizationButton_Click(object sender, EventArgs e)
         {
-            OverlappingRectanglesChart frm = new OverlappingRectanglesChart();
-            frm.Show();
+            if (DataIsValid())
+            {
+                int[] arrA = AParams;
+                int[] arrB = BParams;
+                OverlappingRectanglesVisualization frm = new OverlappingRectanglesVisualization(arrA, arrB);
+                frm.Show(); 
+            }
         }
     }
 }

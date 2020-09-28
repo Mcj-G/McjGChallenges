@@ -101,11 +101,11 @@
     <Compile Include="PokerHandView.Designer.cs">
       <DependentUpon>PokerHandView.cs</DependentUpon>
     </Compile>
-    <Compile Include="PopUp\OverlappingRectanglesChart.cs">
+    <Compile Include="PopUp\OverlappingRectanglesVisualization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PopUp\OverlappingRectanglesChart.Designer.cs">
-      <DependentUpon>OverlappingRectanglesChart.cs</DependentUpon>
+    <Compile Include="PopUp\OverlappingRectanglesVisualization.Designer.cs">
+      <DependentUpon>OverlappingRectanglesVisualization.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -160,8 +160,8 @@
     <EmbeddedResource Include="PokerHandView.resx">
       <DependentUpon>PokerHandView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PopUp\OverlappingRectanglesChart.resx">
-      <DependentUpon>OverlappingRectanglesChart.cs</DependentUpon>
+    <EmbeddedResource Include="PopUp\OverlappingRectanglesVisualization.resx">
+      <DependentUpon>OverlappingRectanglesVisualization.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,6 +1,6 @@
 ﻿namespace ChallengesUI.PopUp
 {
-    partial class OverlappingRectanglesChart
+    partial class OverlappingRectanglesVisualization
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // OverlappingRectanglesChart
+            // OverlappingRectanglesVisualization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 541);
+            this.ClientSize = new System.Drawing.Size(784, 749);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.Name = "OverlappingRectanglesChart";
+            this.Name = "OverlappingRectanglesVisualization";
             this.Text = "OverlappingRectanglesChart";
             this.ResumeLayout(false);
 
