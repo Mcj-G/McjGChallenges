@@ -37,6 +37,8 @@
             this.CheckButton = new System.Windows.Forms.Button();
             this.inputTexBox = new System.Windows.Forms.TextBox();
             this.InputLabel = new System.Windows.Forms.Label();
+            this.isPalindromeCheck = new System.Windows.Forms.TextBox();
+            this.isPalindromeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BackToAllButton
@@ -101,6 +103,7 @@
             this.CheckButton.TabIndex = 16;
             this.CheckButton.Text = "Check";
             this.CheckButton.UseVisualStyleBackColor = true;
+            this.CheckButton.Click += new System.EventHandler(this.CheckButton_Click);
             // 
             // inputTexBox
             // 
@@ -109,6 +112,7 @@
             this.inputTexBox.Name = "inputTexBox";
             this.inputTexBox.Size = new System.Drawing.Size(197, 40);
             this.inputTexBox.TabIndex = 17;
+            this.inputTexBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.inputTexBox_KeyDown);
             // 
             // InputLabel
             // 
@@ -120,11 +124,33 @@
             this.InputLabel.TabIndex = 18;
             this.InputLabel.Text = "Input:";
             // 
+            // isPalindromeCheck
+            // 
+            this.isPalindromeCheck.BackColor = System.Drawing.Color.Red;
+            this.isPalindromeCheck.Location = new System.Drawing.Point(498, 322);
+            this.isPalindromeCheck.Multiline = true;
+            this.isPalindromeCheck.Name = "isPalindromeCheck";
+            this.isPalindromeCheck.ReadOnly = true;
+            this.isPalindromeCheck.Size = new System.Drawing.Size(25, 25);
+            this.isPalindromeCheck.TabIndex = 19;
+            // 
+            // isPalindromeLabel
+            // 
+            this.isPalindromeLabel.AutoSize = true;
+            this.isPalindromeLabel.Font = new System.Drawing.Font("Segoe UI", 18.25F);
+            this.isPalindromeLabel.Location = new System.Drawing.Point(529, 317);
+            this.isPalindromeLabel.Name = "isPalindromeLabel";
+            this.isPalindromeLabel.Size = new System.Drawing.Size(184, 35);
+            this.isPalindromeLabel.TabIndex = 20;
+            this.isPalindromeLabel.Text = "- is palindrome";
+            // 
             // AlmostPalindromeView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(885, 470);
+            this.Controls.Add(this.isPalindromeLabel);
+            this.Controls.Add(this.isPalindromeCheck);
             this.Controls.Add(this.InputLabel);
             this.Controls.Add(this.inputTexBox);
             this.Controls.Add(this.CheckButton);
@@ -153,5 +179,7 @@
         private System.Windows.Forms.Button CheckButton;
         private System.Windows.Forms.TextBox inputTexBox;
         private System.Windows.Forms.Label InputLabel;
+        private System.Windows.Forms.TextBox isPalindromeCheck;
+        private System.Windows.Forms.Label isPalindromeLabel;
     }
 }

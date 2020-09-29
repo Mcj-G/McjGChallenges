@@ -24,5 +24,60 @@ namespace ChallengesUI
             frm.ShowDialog();
             this.Close();
         }
+
+        private void CheckButton_Click(object sender, EventArgs e)
+        {
+            if (inputTexBox.Text != null && inputTexBox.Text != "")
+            {
+                string original = inputTexBox.Text.ToLower().Replace(" ", string.Empty);
+                string reversed = String.Concat(original.Reverse());
+                int counter = 0;
+                if (original == reversed)
+                {
+                    outputTextBox.Text = "FALSE";
+                    isPalindromeCheck.BackColor = Color.Green;
+                }
+                else
+                {
+                    for (int i = 0; i < original.Length; i++)
+                    {
+                        if (original[i] != reversed[i])
+                        {
+                            counter++;
+                        }
+                        if (counter > 2)
+                        {
+                            outputTextBox.Text = "FALSE";
+                            isPalindromeCheck.BackColor = Color.Red;
+                            break;
+                        }
+                    }
+                    if (counter == 2)
+                    {
+                        outputTextBox.Text = "TRUE";
+                        isPalindromeCheck.BackColor = Color.Red;
+                    }
+                    else
+                    {
+                        outputTextBox.Text = "FALSE";
+                        isPalindromeCheck.BackColor = Color.Red;
+                    }
+                } 
+            }
+            else
+            {
+                MessageBox.Show("Please, first type some text.");
+            }
+        }
+
+        private void inputTexBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckButton.PerformClick();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+            }
+        }
     }
 }

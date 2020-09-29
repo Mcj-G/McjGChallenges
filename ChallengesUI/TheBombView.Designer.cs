@@ -78,6 +78,7 @@
             this.inputTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.inputTextBox.Size = new System.Drawing.Size(501, 40);
             this.inputTextBox.TabIndex = 4;
+            this.inputTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.inputTextBox_KeyDown);
             // 
             // outputTextBox
             // 

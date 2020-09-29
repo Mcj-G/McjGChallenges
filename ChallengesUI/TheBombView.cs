@@ -38,5 +38,15 @@ namespace ChallengesUI
                 outputTextBox.Text = "There is no bomb, relax.";
             }
         }
+
+        private void inputTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                CheckButton.PerformClick();
+                e.SuppressKeyPress = true;
+                e.Handled = true;
+            }
+        }
     }
 }
