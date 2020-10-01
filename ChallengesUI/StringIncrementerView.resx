@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DescriptionTexBox.Text" xml:space="preserve">
+    <value>Write a function which increments a string to create a new string.
+- If the string ends with a number, the number should be incremented by 1.
+- If the string doesn't end with a number, 1 should be added to the new string.
+- If the number has leading zeros, the amount of digits should be considered.
+Examples:
+"foo" ➞ "foo1"
+"word0009" ➞ "word0010"
+"target099" ➞ "target100"
+"abc9" ➞ "abc10"</value>
+  </data>
 </root>
