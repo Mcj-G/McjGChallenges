@@ -117,4 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="DescriptionTexBox.Text" xml:space="preserve">
+    <value>Create a function that takes in the size of the line and the number of people waiting and places people in an S-shape ordering, returning the result as string. The demonstration below will make it clear:
+# Ordering numbers 1-15 in a 5 x 3 space.
+(5, 3, 15) ➞ 
+1, 2, 3
+6, 5, 4
+7, 8, 9
+12, 11, 10
+13, 14, 15
+
+If there are too many people for the given dimensions, return "overcrowded".
+(4, 3, 20) ➞ "overcrowded"
+
+Examples:
+(3, 3, 8) ➞
+1, 2, 3
+6, 5, 4
+7, 8, 0
+
+(2, 4, 5) ➞
+1, 2, 3, 4
+0, 0, 0, 5
+
+(2, 4, 10) ➞ "overcrowded"
+
+Note: Always start the ordering on the upper-left corner.</value>
+  </data>
 </root>
