@@ -24,5 +24,10 @@ namespace ChallengesUI
             frm.ShowDialog();
             this.Close();
         }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            timeTexBox.Text = DateTime.Now.ToLongTimeString();
+        }
     }
 }
