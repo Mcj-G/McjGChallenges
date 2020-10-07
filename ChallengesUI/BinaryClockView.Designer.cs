@@ -94,6 +94,8 @@
             this.R4L = new System.Windows.Forms.Label();
             this.R2L = new System.Windows.Forms.Label();
             this.R1L = new System.Windows.Forms.Label();
+            this.ConvertButton = new System.Windows.Forms.Button();
+            this.ShowHideButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // BackToAllButton
@@ -133,7 +135,6 @@
             // timer
             // 
             this.timer.Enabled = true;
-            this.timer.Interval = 500;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // HeaderLabel
@@ -554,7 +555,9 @@
             this.L1L.Name = "L1L";
             this.L1L.Size = new System.Drawing.Size(22, 25);
             this.L1L.TabIndex = 48;
+            this.L1L.Tag = "help";
             this.L1L.Text = "1";
+            this.L1L.Visible = false;
             // 
             // L2L
             // 
@@ -564,7 +567,9 @@
             this.L2L.Name = "L2L";
             this.L2L.Size = new System.Drawing.Size(22, 25);
             this.L2L.TabIndex = 49;
+            this.L2L.Tag = "help";
             this.L2L.Text = "2";
+            this.L2L.Visible = false;
             // 
             // L8L
             // 
@@ -574,7 +579,9 @@
             this.L8L.Name = "L8L";
             this.L8L.Size = new System.Drawing.Size(22, 25);
             this.L8L.TabIndex = 51;
+            this.L8L.Tag = "help";
             this.L8L.Text = "8";
+            this.L8L.Visible = false;
             // 
             // L4L
             // 
@@ -584,7 +591,9 @@
             this.L4L.Name = "L4L";
             this.L4L.Size = new System.Drawing.Size(22, 25);
             this.L4L.TabIndex = 50;
+            this.L4L.Tag = "help";
             this.L4L.Text = "4";
+            this.L4L.Visible = false;
             // 
             // LH1L
             // 
@@ -594,7 +603,9 @@
             this.LH1L.Name = "LH1L";
             this.LH1L.Size = new System.Drawing.Size(25, 25);
             this.LH1L.TabIndex = 52;
+            this.LH1L.Tag = "help";
             this.LH1L.Text = "H";
+            this.LH1L.Visible = false;
             // 
             // LH2L
             // 
@@ -604,7 +615,9 @@
             this.LH2L.Name = "LH2L";
             this.LH2L.Size = new System.Drawing.Size(25, 25);
             this.LH2L.TabIndex = 53;
+            this.LH2L.Tag = "help";
             this.LH2L.Text = "H";
+            this.LH2L.Visible = false;
             // 
             // LM1L
             // 
@@ -614,7 +627,9 @@
             this.LM1L.Name = "LM1L";
             this.LM1L.Size = new System.Drawing.Size(29, 25);
             this.LM1L.TabIndex = 54;
+            this.LM1L.Tag = "help";
             this.LM1L.Text = "M";
+            this.LM1L.Visible = false;
             // 
             // LM2L
             // 
@@ -624,7 +639,9 @@
             this.LM2L.Name = "LM2L";
             this.LM2L.Size = new System.Drawing.Size(29, 25);
             this.LM2L.TabIndex = 55;
+            this.LM2L.Tag = "help";
             this.LM2L.Text = "M";
+            this.LM2L.Visible = false;
             // 
             // LS1L
             // 
@@ -634,7 +651,9 @@
             this.LS1L.Name = "LS1L";
             this.LS1L.Size = new System.Drawing.Size(22, 25);
             this.LS1L.TabIndex = 56;
+            this.LS1L.Tag = "help";
             this.LS1L.Text = "S";
+            this.LS1L.Visible = false;
             // 
             // LS2L
             // 
@@ -644,7 +663,9 @@
             this.LS2L.Name = "LS2L";
             this.LS2L.Size = new System.Drawing.Size(22, 25);
             this.LS2L.TabIndex = 57;
+            this.LS2L.Tag = "help";
             this.LS2L.Text = "S";
+            this.LS2L.Visible = false;
             // 
             // RS2L
             // 
@@ -654,7 +675,9 @@
             this.RS2L.Name = "RS2L";
             this.RS2L.Size = new System.Drawing.Size(22, 25);
             this.RS2L.TabIndex = 63;
+            this.RS2L.Tag = "help";
             this.RS2L.Text = "S";
+            this.RS2L.Visible = false;
             // 
             // RS1L
             // 
@@ -664,7 +687,9 @@
             this.RS1L.Name = "RS1L";
             this.RS1L.Size = new System.Drawing.Size(22, 25);
             this.RS1L.TabIndex = 62;
+            this.RS1L.Tag = "help";
             this.RS1L.Text = "S";
+            this.RS1L.Visible = false;
             // 
             // RM2L
             // 
@@ -674,7 +699,9 @@
             this.RM2L.Name = "RM2L";
             this.RM2L.Size = new System.Drawing.Size(29, 25);
             this.RM2L.TabIndex = 61;
+            this.RM2L.Tag = "help";
             this.RM2L.Text = "M";
+            this.RM2L.Visible = false;
             // 
             // RM1L
             // 
@@ -684,7 +711,9 @@
             this.RM1L.Name = "RM1L";
             this.RM1L.Size = new System.Drawing.Size(29, 25);
             this.RM1L.TabIndex = 60;
+            this.RM1L.Tag = "help";
             this.RM1L.Text = "M";
+            this.RM1L.Visible = false;
             // 
             // RH2L
             // 
@@ -694,7 +723,9 @@
             this.RH2L.Name = "RH2L";
             this.RH2L.Size = new System.Drawing.Size(25, 25);
             this.RH2L.TabIndex = 59;
+            this.RH2L.Tag = "help";
             this.RH2L.Text = "H";
+            this.RH2L.Visible = false;
             // 
             // RH1L
             // 
@@ -704,7 +735,9 @@
             this.RH1L.Name = "RH1L";
             this.RH1L.Size = new System.Drawing.Size(25, 25);
             this.RH1L.TabIndex = 58;
+            this.RH1L.Tag = "help";
             this.RH1L.Text = "H";
+            this.RH1L.Visible = false;
             // 
             // R8L
             // 
@@ -714,7 +747,9 @@
             this.R8L.Name = "R8L";
             this.R8L.Size = new System.Drawing.Size(22, 25);
             this.R8L.TabIndex = 67;
+            this.R8L.Tag = "help";
             this.R8L.Text = "8";
+            this.R8L.Visible = false;
             // 
             // R4L
             // 
@@ -724,7 +759,9 @@
             this.R4L.Name = "R4L";
             this.R4L.Size = new System.Drawing.Size(22, 25);
             this.R4L.TabIndex = 66;
+            this.R4L.Tag = "help";
             this.R4L.Text = "4";
+            this.R4L.Visible = false;
             // 
             // R2L
             // 
@@ -734,7 +771,9 @@
             this.R2L.Name = "R2L";
             this.R2L.Size = new System.Drawing.Size(22, 25);
             this.R2L.TabIndex = 65;
+            this.R2L.Tag = "help";
             this.R2L.Text = "2";
+            this.R2L.Visible = false;
             // 
             // R1L
             // 
@@ -744,13 +783,39 @@
             this.R1L.Name = "R1L";
             this.R1L.Size = new System.Drawing.Size(22, 25);
             this.R1L.TabIndex = 64;
+            this.R1L.Tag = "help";
             this.R1L.Text = "1";
+            this.R1L.Visible = false;
+            // 
+            // ConvertButton
+            // 
+            this.ConvertButton.Font = new System.Drawing.Font("Segoe UI", 16.25F);
+            this.ConvertButton.Location = new System.Drawing.Point(839, 90);
+            this.ConvertButton.Name = "ConvertButton";
+            this.ConvertButton.Size = new System.Drawing.Size(99, 40);
+            this.ConvertButton.TabIndex = 68;
+            this.ConvertButton.Text = "Convert";
+            this.ConvertButton.UseVisualStyleBackColor = true;
+            this.ConvertButton.Click += new System.EventHandler(this.ConvertButton_Click);
+            // 
+            // ShowHideButton
+            // 
+            this.ShowHideButton.Font = new System.Drawing.Font("Segoe UI", 12.25F);
+            this.ShowHideButton.Location = new System.Drawing.Point(458, 386);
+            this.ShowHideButton.Name = "ShowHideButton";
+            this.ShowHideButton.Size = new System.Drawing.Size(105, 40);
+            this.ShowHideButton.TabIndex = 69;
+            this.ShowHideButton.Text = "show/hide";
+            this.ShowHideButton.UseVisualStyleBackColor = true;
+            this.ShowHideButton.Click += new System.EventHandler(this.ShowHideButton_Click);
             // 
             // BinaryClockView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1021, 525);
+            this.Controls.Add(this.ShowHideButton);
+            this.Controls.Add(this.ConvertButton);
             this.Controls.Add(this.R8L);
             this.Controls.Add(this.R4L);
             this.Controls.Add(this.R2L);
@@ -892,5 +957,7 @@
         private System.Windows.Forms.Label R4L;
         private System.Windows.Forms.Label R2L;
         private System.Windows.Forms.Label R1L;
+        private System.Windows.Forms.Button ConvertButton;
+        private System.Windows.Forms.Button ShowHideButton;
     }
 }
