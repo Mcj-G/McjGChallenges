@@ -77,6 +77,7 @@
     <Compile Include="GenericBinaryTreeView.Designer.cs">
       <DependentUpon>GenericBinaryTreeView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\GBTDataTypesList.cs" />
     <Compile Include="MainView.cs">
       <SubType>Form</SubType>
     </Compile>
