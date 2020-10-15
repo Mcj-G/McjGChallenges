@@ -38,7 +38,6 @@
             this.StringIncrementerButton = new System.Windows.Forms.Button();
             this.PokerButton = new System.Windows.Forms.Button();
             this.BinaryClockButton = new System.Windows.Forms.Button();
-            this.BinaryTreeButton = new System.Windows.Forms.Button();
             this.VendingMachineButton = new System.Windows.Forms.Button();
             this.TheBombButton = new System.Windows.Forms.Button();
             this.AddUpButton = new System.Windows.Forms.Button();
@@ -152,17 +151,6 @@
             this.BinaryClockButton.UseVisualStyleBackColor = true;
             this.BinaryClockButton.Click += new System.EventHandler(this.BinaryClockButton_Click);
             // 
-            // BinaryTreeButton
-            // 
-            this.BinaryTreeButton.Font = new System.Drawing.Font("Segoe UI", 16.25F);
-            this.BinaryTreeButton.Location = new System.Drawing.Point(552, 401);
-            this.BinaryTreeButton.Name = "BinaryTreeButton";
-            this.BinaryTreeButton.Size = new System.Drawing.Size(180, 68);
-            this.BinaryTreeButton.TabIndex = 12;
-            this.BinaryTreeButton.Text = "Generic Binary Tree";
-            this.BinaryTreeButton.UseVisualStyleBackColor = true;
-            this.BinaryTreeButton.Click += new System.EventHandler(this.BinaryTreeButton_Click);
-            // 
             // VendingMachineButton
             // 
             this.VendingMachineButton.Font = new System.Drawing.Font("Segoe UI", 16.25F);
@@ -204,7 +192,6 @@
             this.Controls.Add(this.AddUpButton);
             this.Controls.Add(this.TheBombButton);
             this.Controls.Add(this.VendingMachineButton);
-            this.Controls.Add(this.BinaryTreeButton);
             this.Controls.Add(this.BinaryClockButton);
             this.Controls.Add(this.PokerButton);
             this.Controls.Add(this.StringIncrementerButton);
@@ -237,7 +224,6 @@
         private System.Windows.Forms.Button StringIncrementerButton;
         private System.Windows.Forms.Button PokerButton;
         private System.Windows.Forms.Button BinaryClockButton;
-        private System.Windows.Forms.Button BinaryTreeButton;
         private System.Windows.Forms.Button VendingMachineButton;
         private System.Windows.Forms.Button TheBombButton;
         private System.Windows.Forms.Button AddUpButton;

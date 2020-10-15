@@ -75,6 +75,7 @@ namespace ChallengesUI
                 int[] checkList = Array.ConvertAll(stringNums, x => int.Parse(x));
                 bool check = false;
 
+                // TODO - check this for some bug
 
                 foreach (int num in checkList)
                 {

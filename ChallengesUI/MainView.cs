@@ -104,13 +104,5 @@ namespace ChallengesUI
             frm.ShowDialog();
             this.Close();
         }
-
-        private void BinaryTreeButton_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            GenericBinaryTreeView frm = new GenericBinaryTreeView();
-            frm.ShowDialog();
-            this.Close();
-        }
     }
 }

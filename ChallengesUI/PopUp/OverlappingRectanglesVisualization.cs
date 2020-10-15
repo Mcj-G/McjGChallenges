@@ -25,7 +25,7 @@ namespace ChallengesUI.PopUp
         {
             base.OnPaint(e);
             Graphics g;
-            
+
             g = e.Graphics;
 
             Pen myPen1 = new Pen(Color.Black);
@@ -49,6 +49,7 @@ namespace ChallengesUI.PopUp
 
             g.DrawLine(myPen3, 400, 0, 400, 800);
             g.DrawLine(myPen3, 0, 400, 800, 400);
+
             g.DrawRectangle(myPen1, x1, y1, w1, h1);
             g.DrawRectangle(myPen2, x2, y2, w2, h2);
 
