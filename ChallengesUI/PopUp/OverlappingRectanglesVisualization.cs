@@ -35,8 +35,6 @@ namespace ChallengesUI.PopUp
             Pen myPen3 = new Pen(Color.Gray);
             myPen3.Width = 3;
 
-            // TODO - mke it scaleable
-
             int x1 = AParams[0] * 20 + 400;
             int y1 = 400 - (AParams[1] + AParams[3]) * 20;
             int w1 = AParams[2] * 20;

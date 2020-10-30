@@ -85,8 +85,6 @@ namespace ChallengesUI
 
         public static string PokerHandRanking(string[] hand)
         {
-            // TODO - check and think about it!
-
             var r = hand.Select(c => new {
                 Card = c,
                 Type = c.Substring(c.Length - 1, 1),

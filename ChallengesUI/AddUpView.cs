@@ -73,17 +73,17 @@ namespace ChallengesUI
                 string list = listTextBox.Text.Replace(" ", string.Empty);
                 string[] stringNums = list.Split(',');
                 int[] checkList = Array.ConvertAll(stringNums, x => int.Parse(x));
+                List<int> newList = new List<int>();
                 bool check = false;
-
-                // TODO - check this for some bug
 
                 foreach (int num in checkList)
                 {
-                    if (checkList.Contains(k - num))
+                    if (newList.Contains(k - num))
                     {
                         TrueLabel.BackColor = Color.Green;
                         check = true;
                     }
+                    newList.Add(num);
                 }
                 if (check == false)
                 {

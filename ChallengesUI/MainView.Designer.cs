@@ -66,7 +66,7 @@
             // PalindromeButton
             // 
             this.PalindromeButton.Font = new System.Drawing.Font("Segoe UI", 16.25F);
-            this.PalindromeButton.Location = new System.Drawing.Point(46, 401);
+            this.PalindromeButton.Location = new System.Drawing.Point(296, 309);
             this.PalindromeButton.Name = "PalindromeButton";
             this.PalindromeButton.Size = new System.Drawing.Size(180, 68);
             this.PalindromeButton.TabIndex = 10;
@@ -132,7 +132,7 @@
             // PokerButton
             // 
             this.PokerButton.Font = new System.Drawing.Font("Segoe UI", 16.25F);
-            this.PokerButton.Location = new System.Drawing.Point(297, 309);
+            this.PokerButton.Location = new System.Drawing.Point(166, 401);
             this.PokerButton.Name = "PokerButton";
             this.PokerButton.Size = new System.Drawing.Size(180, 68);
             this.PokerButton.TabIndex = 8;
@@ -154,7 +154,7 @@
             // VendingMachineButton
             // 
             this.VendingMachineButton.Font = new System.Drawing.Font("Segoe UI", 16.25F);
-            this.VendingMachineButton.Location = new System.Drawing.Point(297, 401);
+            this.VendingMachineButton.Location = new System.Drawing.Point(433, 401);
             this.VendingMachineButton.Name = "VendingMachineButton";
             this.VendingMachineButton.Size = new System.Drawing.Size(180, 68);
             this.VendingMachineButton.TabIndex = 11;
