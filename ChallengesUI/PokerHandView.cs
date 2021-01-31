@@ -85,21 +85,21 @@ namespace ChallengesUI
 
         public static string PokerHandRanking(string[] hand)
         {
-            var r = hand.Select(c => new {
-                Card = c,
-                Type = c.Substring(c.Length - 1, 1),
-                Number = (int)Enum.Parse(typeof(CardNumber), "_" + c.Substring(0, c.Length - 1))
+            var handDetails = hand.Select(card => new {
+                Card = card,
+                Type = card.Substring(card.Length - 1, 1),
+                Number = (int)Enum.Parse(typeof(CardNumber), "_" + card.Substring(0, card.Length - 1))
             }).OrderByDescending(c => c.Number);
 
-            var types = r.GroupBy(c => c.Type);
-            var isStraight = !r.Select(c => c.Number).Where((cn, i) => cn != (r.First().Number - i)).Any();
-            var g = r.GroupBy(c => c.Number);
-
+            var types = handDetails.GroupBy(card => card.Type);
+            var isStraight = !handDetails.Select(card => card.Number).Where((cardNumber, i) => cardNumber != (handDetails.First().Number - i)).Any();
+            var groupedHand = handDetails.GroupBy(card => card.Number);
+            
             if (types.Count() == 1)
             {
                 if (isStraight)
                 {
-                    if (r.First().Number == 14)
+                    if (handDetails.First().Number == 14)
                         return "Royal Flush";
                     else
                         return "Straight Flush";
@@ -113,20 +113,20 @@ namespace ChallengesUI
                 {
                     return "Straight";
                 }
-                else if (g.Count() == 2)
+                else if (groupedHand.Count() == 2)
                 {
-                    if (g.Any(d => d.Count() == 3))
+                    if (groupedHand.Any(x => x.Count() == 3))
                         return "Full House";
                     else
                         return "Four of a Kind";
                 }
-                else if (g.Count() == 3 && g.Any(x => x.Count() == 3))
+                else if (groupedHand.Count() == 3 && groupedHand.Any(x => x.Count() == 3))
                 {
                     return "Three of a Kind";
                 }
-                else if (g.Count(x => x.Count() == 2) == 2)
+                else if (groupedHand.Count(x => x.Count() == 2) == 2)
                     return "Two Pair";
-                else if (g.Count(x => x.Count() == 2) == 1)
+                else if (groupedHand.Count(x => x.Count() == 2) == 1)
                     return "Pair";
                 else
                     return "High Card";
